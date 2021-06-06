@@ -43,3 +43,4 @@ RUN 	curl -R -O http://www.lua.org/ftp/lua-$LUAVERSION.tar.gz \
 WORKDIR /etc/vpl/
 COPY entrypoint.sh /
 CMD ["/entrypoint.sh"]
+RUN		chmod +x entrypoint.sh
