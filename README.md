@@ -15,7 +15,7 @@ docker build -t img_vpl_jail .
 #### Run
 
 ```shell
-docker run -d --name vpl_jail --env FQDN=localhost --env PASSJAIL=GXTQfHkY --env PASSOPENSSL=SjFWMvvD --env PORT=81 --env SECURE_PORT=444 --cap-add=SYS_ADMIN -it -p 81:81 -p 444:444 img_vpl_jail
+docker run -d --name vpl_jail --env FQDN=localhost --env PASSJAIL=PASS --env PASSOPENSSL=SSL --env PORT=80 --env SECURE_PORT=443 --cap-add=SYS_ADMIN -it -p 81:80 -p 444:443 img_vpl_jail
 ```
 
 #### Development softwares installed
